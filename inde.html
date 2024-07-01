@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>SORT TABLE</h1>
+    <div class="outer">
+        <div class="container">
+            <div id="alert" class="alert"></div>
+            <label for="columnIndex">Enter column index to sort (0 for Name, 1 for Age, 2 for Gender, 3 for Location):</label>
+            <input type="number" id="columnIndex" min="0" max="3">
+            <label for="sortValue">Enter value to sort by (e.g., 'Male' for Gender, '25' for Age):</label>
+            <input type="text" id="sortValue">
+            <div class="buttons">
+                <button onclick="sortTable(true)">Sort Ascending</button>
+                <button onclick="sortTable(false)">Sort Descending</button>
+            </div>
+            <table id="sortableTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>1</td>
+                        <td>Male</td>
+                        <td>London</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>2</td>
+                        <td>Male</td>
+                        <td>canada</td>
+                    </tr>
+                    <tr>
+                        <td>kavi</td>
+                        <td>3</td>
+                        <td>female</td>
+                        <td>uk</td>
+                    </tr>
+                    <tr>
+                        <td>mark</td>
+                        <td>4</td>
+                        <td>Male</td>
+                        <td>aus</td>
+                    </tr>
+                    <tr>
+                        <td>romei</td>
+                        <td>5</td>
+                        <td>female</td>
+                        <td>nazi</td>
+                    </tr>
+                    <tr>
+                        <td>trump</td>
+                        <td>6</td>
+                        <td>Male</td>
+                        <td>usa</td>
+                    </tr>
+                    <tr>
+                        <td>andria</td>
+                        <td>7</td>
+                        <td>female</td>
+                        <td>hongkong</td>
+                    </tr>
+                    <tr>
+                        <td>jack</td>
+                        <td>8</td>
+                        <td>Male</td>
+                        <td>russia</td>
+                    </tr>
+                    <tr>
+                        <td>alba</td>
+                        <td>9</td>
+                        <td>female</td>
+                        <td>california</td>
+                    </tr>
+                    <tr>
+                        <td>diseal</td>
+                        <td>10</td>
+                        <td>Male</td>
+                        <td>canada</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
